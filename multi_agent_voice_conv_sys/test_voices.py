@@ -1,4 +1,4 @@
-from stt_tts import speak
+from voice import speak
 from time import sleep
 
 print("Testing Optimist Voice (luna)...")
