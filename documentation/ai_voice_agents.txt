@@ -1,0 +1,74 @@
+Ai voice/audio agents:
+Audio processing:
+It is the use of ai to interpret and manipulate audio signals.
+Earlier it used to be just basic sound analysis, now it has evolved to intelligent systems that can recognise speech, generate music and even understand emotions.
+
+Brief history:
+-> 1950: digital audio synthesis begins
+-> 1970; early speech synthesis
+-> 1990: machine learning introduced
+-> 2010”: deep learning evolution starts
+
+Cnn (convolutional neural networks): they extract patterns from raw data
+Rnn (recurrent neural network) +LSTM: they understand the temporal relationships in speech.
+
+Key concepts in modern day audio processing:
+ fourier transformation and spectral analysis: 
+-> they transform audio signal into smaller frequency componenets
+-> they can identify musical notes or instruments
+-> they can remove bg noise
+-> they allow sound editing
+
+Deep neural network:
+-> tehy learn patterns in audio data through multiple layers
+-> used in instrument reognitions, speech to text conversions, emotion detection and noise reduction
+
+ASR (automatic speech recognition):
+-> converts speech to text
+-> so they help in voice commands, making audio transcriptions etc
+
+Sound generation and music composition
+            -> generative ai models learn audio patterns and creates new music on its own (eg: musicnet, jukebox)
+           
+
+Types of ai agents:
+Simple reflex: respondes to direct commands only
+Model based reflex: maintains internal states and adapts to changing environments
+Goal based: plans and acts towards long term goals
+Utility based: chooses best action based on outcomes
+Learning agent: learns from experience and feedback
+
+Llms are used as cognitive engines for text processing. They now act as reasoning agents.
+
+Agentic ai patterns for enhanced reasoning:
+
+Chain of thought: it breaks down the user problems into smaller ones step by step for logical reasoning
+
+React: it combines both reading and action, it first thinks then acts
+
+Tree of thought: it explores multiple reasoning paths to choose the best outcome.
+
+Llms with tools: it uses and calls external tools like webseacrh, databases etc to enhance the output quality
+
+ReWOO: it enhances the memory and modular reasoning by invoking reusable skills.
+
+Ai voice agents have a lot of real world applications like:
+-> customer services by automating faqs and handling calls
+-> in healthcare by voice diagnostics and appointment
+-> in finance by giving fraud alerts, account management
+->in  accessibility by giving real time transcription
+-> smart assistants for scheduling, reminders etc
+
+
+Multi-turn conversation in voice AI
+
+What exactly is a multi-turn conversation?
+Multi-turn conversation is like a dialogue exchange flow between multiple agents and user. So overall it looks like a group of people having a natural discussion on a topic.
+
+The agent here remembers the context, maintains flow and responds dynamically
+
+Multi-turn conversations have:
+Contextual understanding
+Personalized and human like flow
+More natural sounding convo
+Lower training needs
