@@ -28,3 +28,28 @@ Custom workflow: it has partial dynamic routing. They static edges defined in th
 Handoff between agents:
 
 In langraph, each agents are denoted as graph nodes. So each of them have a command to route to the next agent or update the graph state. Additionally, handoffs can also be used as tools.
+
+
+What is A2A?
+ Agent2agent is a comminuincation standard that allows diff agents to talk to each other and work
+
+It lets us use multiple specialized agents together to collaborate on tasks. It can let multiple agents have a discussion among themselves to come down at a common goal.
+
+A2a gives:
+Common communication format
+Agent discovery
+Task management workflows
+Supports diff data types
+Security and asych support
+
+
+In agentic systems agents to tool/resources communications are handled by MCP. ie tool calling are done by mcp
+
+Mcp standardizes how agents connect to tools and apis
+
+Mcp features:
+They define tool capabilities and structure
+They call apis, query db etc
+
+
+A2a is mainly abt agent-agent relationship but mcp is agent-tool relationship 
