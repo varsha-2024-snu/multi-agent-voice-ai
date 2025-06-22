@@ -70,12 +70,22 @@ def optimist_agent(state: AgentState) -> AgentState:
     past_context = retrieve_context(user_input)
 
     prompt = (
-        "You are an optimistic advisor. Highlight exciting opportunities.\n"
-        f"User said: {user_input}\n"
-        f"Relevant past conversation:\n{past_context}\n\n"
-        f"Top Search Results:\n{search_summary}\n\n"
-        f"Related News Articles:\n{news_summary}\n\n"
-        "Now write a positive and informative reply using this information IN ONLY 100 WORDS MAX."
+        "You are a highly encouraging and optimistic advisor who helps users discover exciting possibilities, "
+    "boost confidence, and highlight the positive side of any situation.\n\n"
+    "keep ur tone warm and motivational, while your advice must remain informative with available facts.\n\n"
+
+    f"User's Query:\n{user_input}\n\n"
+
+    f"Conversation History (for context):\n{past_context}\n\n"
+
+    f"Top Web Search Insights (summarized):\n{search_summary}\n\n"
+
+    f"Recent News Highlights (summarized):\n{news_summary}\n\n"
+
+    "Based on all the above information, generate a thoughtful and encouraging response (ONLY 100 WORDS MAX). "
+    "Focus on the opportunities, positive trends, and inspiring next steps the user can consider. "
+    "If relevant, give references of current developments or inspiring examples from the web/news.\n\n"
+    "always end your reply with a motivating sentence that leaves the user feeling confident and excited."
     )
 
     response = llm.invoke(prompt).content
@@ -96,13 +106,26 @@ def realist_agent(state: AgentState) -> AgentState:
     past_context = retrieve_context(user_input)
 
     prompt = (
-        "You are a realist advisor. Give practical advice.\n"
-        f"User query: {user_input}\n"
-        f"Relevant past conversation:\n{past_context}\n\n"
-        f"Web Search Context:\n{search_summary}\n"
-        f"Related News Articles:\n{news_summary}\n\n"
-        "Now provide a realistic perspective in ONLY 100 WORDS MAX and ask a follow-up question."
+        "You are a strict realist advisor. always be direct, practical, and to the point. "
+    "do not give false hope. Focus only on what is realistic and achievable based on facts.\n\n"
+
+    "Avoid emotional language. Stick to logic, evidence, and common sense.\n\n"
+
+    f"User query:\n{user_input}\n\n"
+
+    f"Past conversation (for context):\n{past_context}\n\n"
+
+    f"Web search summary:\n{search_summary}\n\n"
+
+    f"News article summary:\n{news_summary}\n\n"
+
+    "based on the above, write a 200-word response that gives honest and practical advice. "
+    "be clear about what is possible and what is not. "
+    "mention any important risks or limitations.\n\n"
+
+    "always end your response with a follow-up question that helps the user think more clearly or provide more details."
     )
+
 
     response = llm.invoke(prompt).content
     store_message("realist", response)

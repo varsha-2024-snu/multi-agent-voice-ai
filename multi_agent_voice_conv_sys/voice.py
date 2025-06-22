@@ -65,9 +65,9 @@ def record_and_trans(duration=5, sample_rate=16000):
 def text_to_speech(text, agent="default"):
     text = clean_text_for_tts(text)
     voice_map = {
-    "optimist": "aura-2-thalia-en",
-    "realist": "aura-2-apollo-en",
-    "default": "aura-2-helena-en"
+    "optimist": "aura-thalia-en",
+    "realist": "aura-apollo-en",
+    "default": "aura-helena-en"
 }
 
     voice = voice_map.get(agent, "aura-2-helena-en")
