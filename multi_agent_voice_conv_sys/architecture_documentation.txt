@@ -1,0 +1,34 @@
+Architecture documentation:
+
+The voice-based multi-agent system is implemented using langraph, deepgram, chromdb, gemini llm, serper api and news api.
+
+It has 2 ai agents, one optimist and another realist. Both of these agents are prompted to have completely different personalities.
+
+Langraph:
+The langraph has 3 nodes one optimist, realist and user. The node always starts with optimist and moves on to realist and user (a cyclic flow).
+This flow ensures both agent2agent convo and agent2user convo.
+
+Deepgram:
+STT: the record_and_trans() function records 5 seconds of user input audio and then transcribes it to text
+TTS: text_to_speech() function send the agent response to deepgram to convert to audio and then plays it using pydub (currently supports only 1 agent due to account limitations)
+
+Real-time web results:
+-> serper api performs google search on any topic from the user query [search_serper()]
+-> news api retrieves current affairs or events [get_latest_news()]
+-> both of these are embedded in agent prompts
+
+Vector memory
+-> chroma stores each of the user and agent message as embeddings in the local db
+-> semantic search results are retrieved whenever needed
+
+Gemini llm:
+-> gemini-flash-preview-model generates responses for each agent
+
+
+
+Data flow summary:
+User speaks a message
+STT transcribes message and passes input to agents
+Agents retrieve similar past messages (if exists), performs web and news search
+Gives out a response based on its prompt
+Then conversations are looped until exit
