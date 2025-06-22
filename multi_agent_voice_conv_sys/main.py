@@ -11,7 +11,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmb
 from langchain_chroma import Chroma
 from langgraph.graph import StateGraph
 
-from stt_tts import record_and_trans, text_to_speech
+from voice import record_and_trans, text_to_speech
 
 load_dotenv()
 
