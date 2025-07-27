@@ -1,0 +1,13 @@
+sounddevice
+numpy
+scipy
+requests
+pydub
+python-dotenv
+deepgram-sdk
+langchain-core
+langchain-google-genai
+langchain-chroma
+langgraph
+chromadb
+aenum>=3.1.11

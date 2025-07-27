@@ -65,10 +65,11 @@ def record_and_trans(duration=5, sample_rate=16000):
 def text_to_speech(text, agent="default"):
     text = clean_text_for_tts(text)
     voice_map = {
-    "optimist": "aura-thalia-en",
-    "realist": "aura-apollo-en",
-    "default": "aura-helena-en"
+    "optimist": "aura-asteria-en",
+    "realist": "aura-athena-en",
+    "default": "aura-riley-en"
 }
+
 
     voice = voice_map.get(agent, "aura-2-helena-en")
     url = f"https://api.deepgram.com/v1/speak?model={voice}"
