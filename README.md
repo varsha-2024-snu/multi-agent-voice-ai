@@ -22,18 +22,22 @@ Built using:
 
 ---
 
-## Project Structure
-multi_agent_voice_conv_sys/
-│
-├── main.py # Main logic and conversation loop
-├── voice.py # Handles audio recording, transcription, and TTS
-├── requirements.txt # Python dependencies
-├── .env # API keys (not committed)
-└── README.md # Project documentation
+### Future Enhancements
+
+- **GUI Interface:** Build a lightweight graphical interface to display agent responses and conversation history.
+- **Offline Capability:** Integrate offline speech recognition and TTS models to reduce dependency on internet access.
+- **Multilingual Support:** Add ability to interact in Indian regional languages like Hindi, Tamil, Malayalam, etc.
+- **Agent Personality Customization:** Allow users to choose or configure agent personas (e.g., humorous, academic, mentor).
+- **Conversation Logging:** Maintain logs of past interactions for analytics or feedback.
+- **Interrupt and Replay Controls:** Add hotkeys or voice commands to interrupt, repeat, or skip agent responses.
+- **Emotion Detection:** Integrate basic sentiment analysis or emotion detection to adapt response tone.
+- **Mobile/Web App Integration:** Extend the system to work on smartphones or browsers via a client-server architecture.
+
+
 
 ## Setup Instructions
 
-### 1. Clone the repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/your-username/multi_agent_voice_conv_sys.git
@@ -53,19 +57,6 @@ source .venv/bin/activate
 
 ```bash
 pip install -r requirements.txt
-
-### Step 4: Create a .env file in the root directory
-
-## Future Enhancements
-
-- **GUI Interface:** Build a lightweight graphical interface to display agent responses and conversation history.
-- **Offline Capability:** Integrate offline speech recognition and TTS models to reduce dependency on internet access.
-- **Multilingual Support:** Add ability to interact in Indian regional languages like Hindi, Tamil, Malayalam, etc.
-- **Agent Personality Customization:** Allow users to choose or configure agent personas (e.g., humorous, academic, mentor).
-- **Conversation Logging:** Maintain logs of past interactions for analytics or feedback.
-- **Interrupt and Replay Controls:** Add hotkeys or voice commands to interrupt, repeat, or skip agent responses.
-- **Emotion Detection:** Integrate basic sentiment analysis or emotion detection to adapt response tone.
-- **Mobile/Web App Integration:** Extend the system to work on smartphones or browsers via a client-server architecture.
 
 
 
