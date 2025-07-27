@@ -45,17 +45,14 @@ cd multi_agent_voice_conv_sys
 
 ### Step 1: Create a virtual environment using Python 3.11
 
-```bash
 python3.11 -m venv .venv
 
 ### Step 2: Activate the virtual environment
 
-```bash
 source .venv/bin/activate
 
 ### Step 3: Install all Python packages
 
-```bash
 pip install -r requirements.txt
 
 
